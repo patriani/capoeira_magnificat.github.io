@@ -31,7 +31,7 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-git push https://%USER%:%PASSWORD%@github.com/patriani/magnificat.github.io.git origin feature/user-friendly
+git push https://%USER%:%PASSWORD%@github.com/patriani/magnificat.github.io.git
 
 set PASSWORD=
 
