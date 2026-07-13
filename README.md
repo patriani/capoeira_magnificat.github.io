@@ -1,5 +1,4 @@
 # magnificat.github.io
-Site oficial Capoeira Magnificat
+Projeto para oficial Capoeira Magnificat
 
-- Configurações adicionais:
-https://github.com/patriani/magnificat.github.io.git
+- [**Clique aqui**](https://github.com/patriani/magnificat.github.io/tree/main/Atalhos) para obter as instruções  para atualizar as imagens do site.
