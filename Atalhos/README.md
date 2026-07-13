@@ -8,7 +8,15 @@ Scripts para facilitar tarefas comuns do projeto.
 
 **O que faz:** Verifica se o Git está instalado no seu computador. Se não estiver, descarrega e instala a versão mais recente automaticamente.
 
-**Como usar:** Dê duplo clique no ficheiro. Se o Git já estiver instalado, vê a versão atual. Se não estiver, o script trata de tudo.
+**Como usar:**
+1. Dê duplo clique no ficheiro. 
+
+![Primeiro passo](https://github.com/patriani/magnificat.github.io/blob/main/how_to_img01.png?raw=true)
+
+2. Se o Git já estiver instalado, vê a versão atual. Se não estiver, o script trata de tudo.
+
+![Segundo passo](https://github.com/patriani/magnificat.github.io/blob/main/how_to_img02.png?raw=true)
+
 
 **Nota:** Após a instalação, pode ser preciso fechar e reabrir o terminal para o Git ficar disponível.
 
@@ -44,3 +52,6 @@ Desde agosto de 2021, o GitHub **não aceita a password normal** da sua conta pa
 ---
 
 Qualquer dúvida, fale com o responsável pelo projeto.
+
+
+Teste

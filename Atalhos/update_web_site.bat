@@ -1,39 +1,32 @@
 @echo off
 title Atualizar imagens - GitHub
 
-echo ========================================
-echo  Atualizar pasta images/ via Git
-echo ========================================
-echo.
-echo NOTA: Desde 2021 o GitHub NAO aceita password
-echo normal para HTTPS. Se falhar, crie um token
-echo em https://github.com/settings/tokens e use-o
-echo como "password".
-echo.
-echo.
-
-set /p USER="Utilizador GitHub: "
-set /p PASSWORD="Password (ou token): "
+:: Prompt for Git personal‑access token
+:ask_token
+set /p GIT_TOKEN="Enter your Git personal access token (or press ENTER to cancel): "
+if "%GIT_TOKEN%"=="" (
+    echo Token not provided – operation cancelled.
+    pause
+    exit /b 1
+)
 
 cd /d "%~dp0.."
 
-git add images/
+git add images/ >nul 2>&1
 if %errorlevel% neq 0 (
     echo Erro no git add.
     pause
     exit /b 1
 )
 
-git commit -m "Atualizar imagens"
+git commit -m "Atualizar imagens" >nul 2>&1
 if %errorlevel% neq 0 (
     echo Nao ha alteracoes para commitar ou ocorreu um erro.
     pause
     exit /b 1
 )
 
-git push https://%USER%:%PASSWORD%@github.com/patriani/magnificat.github.io.git
-
-set PASSWORD=
+git push 
 
 echo.
 echo Operacao concluida.
