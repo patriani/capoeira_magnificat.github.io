@@ -384,5 +384,32 @@ $(function () {
         interval: 5000
      });
 
+     /* Active page detection
+     -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+     (function() {
+         var path = window.location.pathname;
+         var currentFile = path.split('/').pop();
+         var isAulasSubpage = path.includes('/aulas/');
+
+         // Desktop menu
+         document.querySelectorAll('.menu_main li a').forEach(function(link) {
+             var href = link.getAttribute('href');
+             var hrefFile = href.split('/').pop();
+             if ((hrefFile === 'services.html' && isAulasSubpage) || hrefFile === currentFile) {
+                 link.parentElement.classList.add('active');
+             }
+         });
+
+         // Mobile menu
+         document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+             var href = link.getAttribute('href');
+             var hrefFile = href.split('/').pop();
+             if ((hrefFile === 'services.html' && isAulasSubpage) || hrefFile === currentFile) {
+                 link.parentElement.classList.add('active');
+                 link.classList.add('active');
+             }
+         });
+     })();
 
 });
