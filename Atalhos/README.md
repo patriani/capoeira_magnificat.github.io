@@ -2,7 +2,13 @@
 
 Scripts para facilitar tarefas comuns do projeto.
 
----
+1. **git_install.bat** : Instalação necessária para atualizar as imagens do site
+
+2. **update_web_site.bat**: Atualiza o site com as imagens da pasta ```magnificat.github.io\images```
+
+<br>
+
+
 
 ## git_install.bat
 
@@ -20,7 +26,7 @@ Scripts para facilitar tarefas comuns do projeto.
 
 **Nota:** Após a instalação, pode ser preciso fechar e reabrir o terminal para o Git ficar disponível.
 
----
+
 
 ## update_web_site.bat
 **Requisito: precisa do Git instalado na máquina**
@@ -34,24 +40,12 @@ Scripts para facilitar tarefas comuns do projeto.
 
 3. Insira o **Token (password)**:
 
+![Segundo passo - update](https://github.com/patriani/magnificat.github.io/blob/main/how_to_img05.png?raw=true)
+
+4. Confirme pressionando a tecla enter e verifique se não houve erro:
+
 ![Segundo passo - update](https://github.com/patriani/magnificat.github.io/blob/main/how_to_img04.png?raw=true)
 
-O script faz:
-- `git add images/` — prepara as imagens
-- `git commit -m "Atualizar imagens"` — regista as alterações
-- `git push` — envia para o GitHub
-
-### ⚠️ Importante: Token em vez de password
-
-Desde agosto de 2021, o GitHub **não aceita a password normal** da sua conta para operações via terminal. Para que o script funcione, precisa de criar um **token de acesso pessoal**:
-
-1. Aceda a https://github.com/settings/tokens
-2. Clique em **Generate new token (classic)**
-3. Escolha um nome qualquer (ex: "magnificat-script")
-4. Marque a opção **repo** (dá acesso ao repositório)
-5. Clique em **Generate token**
-6. **Copie o token** (é mostrado apenas uma vez!)
-7. Use esse token como "password" quando o script pedir
 
 ---
 
