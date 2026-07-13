@@ -29,8 +29,12 @@ Scripts para facilitar tarefas comuns do projeto.
 **Como usar:**
 
 1. Dê duplo clique no ficheiro
-2. Introduza o seu **nome de utilizador** do GitHub
-3. Introduza a sua **password** (ou **token de acesso pessoal** — veja abaixo)
+
+![Primeiro passo - update](https://github.com/patriani/magnificat.github.io/blob/main/how_to_img03.png?raw=true)
+
+3. Insira o **Token (password)**:
+
+![Segundo passo - update](https://github.com/patriani/magnificat.github.io/blob/main/how_to_img04.png?raw=true)
 
 O script faz:
 - `git add images/` — prepara as imagens
@@ -52,6 +56,3 @@ Desde agosto de 2021, o GitHub **não aceita a password normal** da sua conta pa
 ---
 
 Qualquer dúvida, fale com o responsável pelo projeto.
-
-
-Teste
