@@ -25,7 +25,6 @@
 @import url(css/font-awesome.min.css);
 @import url(meanmenu.css);
 @import url(owl.carousel.min.css);
-@import url(swiper.min.css);
 @import url(slick.css);
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
@@ -429,10 +428,18 @@ button {
 
 .carousel_img {
    width: 100%;
-   height: 600px;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.banner-swiper {
+   width: 100%;
+   height: 500px;
+}
+
+.swiper-pagination-bullet-active {
+   background: #F6A000;
 }
 
 /* banner section end */

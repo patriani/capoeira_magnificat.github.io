@@ -199,9 +199,24 @@ $(function () {
 		} );
 	});
 	
+	/* Banner Swiper
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+	var bannerSwiper = new Swiper('.banner-swiper', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+
 	/* heroslider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	var swiper = new Swiper('.heroslider', {
 		spaceBetween: 30,
 		centeredSlides: true,

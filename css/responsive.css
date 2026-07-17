@@ -195,6 +195,9 @@
     .input_btn_main {
         width: 60%;
     }
+    .banner-swiper {
+        height: 450px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -267,6 +270,9 @@
     }
     .input_btn_main {
         width: 90%;
+    }
+    .banner-swiper {
+        height: 400px;
     }
 }
 
@@ -471,6 +477,9 @@
         width: 100%;
         padding-top: 90px;
     }
+    .banner-swiper {
+        height: 300px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -673,6 +682,9 @@
     .email_text {
         width: 100%;
         padding-top: 90px;
+    }
+    .banner-swiper {
+        height: 220px;
     }
 
 }

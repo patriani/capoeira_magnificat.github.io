@@ -28,10 +28,12 @@
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <!-- fonts -->
    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
-   <!-- owl stylesheets -->
-   <link rel="stylesheet" href="css/owl.carousel.min.css">
-   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
 </head>
 
@@ -41,7 +43,7 @@
       <div class="header_main">
          <div class="mobile_menu">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <div class="logo_mobile"><a href="index.html"><img src="images/logo.png"></a></div>
+               <div class="logo_mobile"><a href="index.html"><img src="images/other_images/logo_header.png"></a></div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -62,7 +64,7 @@
             </nav>
          </div>
          <div class="container-fluid">
-            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div class="logo"><a href="index.html"><img src="images/other_images/logo_header.png"></a></div>
             <div class="menu_main">
                <ul>
                   <li><a href="index.html">Home</a></li>
@@ -73,19 +75,20 @@
          </div>
       </div>
       <!-- banner section start -->
-      <div class="banner_section layout_padding">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-             <div class="carousel-inner">
-                <div class="carousel-item active">
-                   <div class="carousel_img" style="background-image: url('./images/banner_example01.png');"></div>
+      <div class="banner_section">
+          <div class="swiper-container banner-swiper">
+             <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                   <img class="carousel_img" src="./images/banner_images/banner_example01.png" alt="Banner 1">
                 </div>
-                <div class="carousel-item">
-                   <div class="carousel_img" style="background-image: url('./images/banner_example02.png');"></div>
+                <div class="swiper-slide">
+                   <img class="carousel_img" src="./images/banner_images/banner_example02.png" alt="Banner 2">
                 </div>
-                <div class="carousel-item">
-                   <div class="carousel_img" style="background-image: url('./images/main_img_banner.png');"></div>
+                <div class="swiper-slide">
+                   <img class="carousel_img" src="./images/banner_images/main_img_banner.png" alt="Banner 3">
                 </div>
              </div>
+             <div class="swiper-pagination"></div>
           </div>
       </div>
       <!-- banner section end -->
@@ -107,7 +110,7 @@
              <div class="col-md-6">
                 <div class="follow_card follow_instagram">
                    <div class="follow_img_box">
-                      <img src="images/foto-perfil-instagram.jpg" alt="Instagram">
+                      <img src="images/other_images/foto-perfil-instagram.jpg" alt="Instagram">
                    </div>
                    <div class="follow_info">
                       <h3>Instagram</h3>
@@ -119,7 +122,7 @@
              <div class="col-md-6">
                 <div class="follow_card follow_spotify">
                    <div class="follow_img_box">
-                      <img src="images/foto-perfil-spotify.png" alt="Spotify">
+                      <img src="images/config_images/spotify-icon.svg" alt="Spotify">
                    </div>
                    <div class="follow_info">
                       <h3>Spotify</h3>
@@ -186,7 +189,7 @@
           <div class="social_icon">
              <ul>
                 <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="#E4405F"><rect x="2" y="2" width="20" height="20" rx="5" fill="currentColor"/><circle cx="12" cy="12" r="5" fill="none" stroke="#fff" stroke-width="1.2"/><circle cx="17.5" cy="6.5" r="1.5" fill="#fff"/></svg></a></li>
-                <li><a href="#"><img src="images/spotify-icon.svg"></a></li>
+                <li><a href="#"><img src="images/config_images/spotify-icon.svg"></a></li>
              </ul>
           </div>
        </div>
